@@ -10,9 +10,9 @@ export default function RegisterOTP() {
 
   return (
     <div className="flex items-center justify-center bg-background-light-gray min-h-screen p-4">
-      <div className="bg-background-white flex flex-col sm:px-4 sm:py-6 md:px-5 md:py-6 lg:px-12 lg:py-14 lg:w-89 rounded-md shadow-sm">
+      <div className="bg-background-white flex flex-col w-full max-w-md lg:w-134 px-5 py-6 sm:px-8 sm:py-7 rounded-md shadow-sm">
         {/* LOGO AND HEADING*/}
-        <div className="flex justify-center items-center flex-col gap:6 sm:gap-8">
+        <div className="flex justify-center items-center flex-col gap-y-10 sm:gap-8 mb-8 mt-6">
           <Image
             src="/wesbitLogoText.avif"
             alt="Shogol Icon"
@@ -21,6 +21,9 @@ export default function RegisterOTP() {
             priority
           />
           <h4 className="sub-heading">رمز التحقق</h4>
+        </div>
+
+        <div className="flex justify-center items-center flex-col gap-8 sm:gap-10">
           <OtpInput
             value={otp}
             onChange={setOtp}
@@ -37,10 +40,10 @@ export default function RegisterOTP() {
         </div>
 
         {/* BUTTON AND TEXT BOTTOM AREA */}
-        <div className="flex flex-col gap-1 mt-7 align-middle">
+        <div className="flex flex-col gap-1 mt-7">
           <ButtonBig>التالي</ButtonBig>
           <hr className="my-3 border-[#c4ccd1]" />
-          <p className="text-text-black">
+          <p className="text-text-black text-center">
             لديك حساب بالفعل
             <span className="text-secondary-teal"> تسجيل الدخول </span>
           </p>

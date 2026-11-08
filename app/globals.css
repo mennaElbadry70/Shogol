@@ -5,7 +5,9 @@
     --color-secondary-teal: #1EAAAD;
     --color-supporting-blue: #02385A;
     --color-background-white: #FFFFFF;
-    --color-text-gray: #707070;
+    /* --color-text-gray: #707070; */
+    --color-text-gray: #ccc6c6;
+    --color-link-blue: #02385A;
     --color-text-black: #37383b;
     --color-notify-green: #7EC439;
 }
