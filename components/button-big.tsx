@@ -6,7 +6,7 @@ type ButtonBigStyleProps = {
 
 export default function ButtonBig({ children }: ButtonBigStyleProps) {
   return (
-    <button className="bg-secondary-teal px-7 py-3.5 rounded-lg text-white cursor-pointer text-centers w-full">
+    <button className="w-full cursor-pointer rounded-lg bg-secondary-teal px-7 py-3.5 text-center text-white focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-secondary-teal">
       {children}
     </button>
   );

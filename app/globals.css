@@ -5,11 +5,17 @@
     --color-secondary-teal: #1EAAAD;
     --color-supporting-blue: #02385A;
     --color-background-white: #FFFFFF;
-    /* --color-text-gray: #707070; */
-    --color-text-gray: #ccc6c6;
+    --color-text-gray: #707070;
     --color-link-blue: #02385A;
+    --color-hero-blue: #2b5b76;
     --color-text-black: #37383b;
     --color-notify-green: #7EC439;
+}
+
+
+@theme inline {
+    --font-sans: var(--font-cairo), sans-serif;
+    --font-heading: var(--font-elMessiri), sans-serif;
 }
 
 @layer base {
@@ -17,5 +23,21 @@
         font-size: 18px;
         font-weight: bold;
         color: #37383B;
+    }
+
+    .wrapper {
+        margin-inline: 200px;
+    }
+
+    @media (max-width: 767px) {
+        .wrapper {
+            margin-inline: 1rem;
+        }
+    }
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+        .wrapper {
+            margin-inline: 40px;
+        }
     }
 }

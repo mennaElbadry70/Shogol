@@ -1,9 +1,15 @@
 import type { Metadata } from "next";
-import { Cairo } from "next/font/google";
+import { Cairo, El_Messiri } from "next/font/google";
 import "@/app/globals.css";
 
 const cairo = Cairo({
   subsets: ["arabic"],
+  variable: "--font-cairo",
+});
+
+const elmessiri = El_Messiri({
+  subsets: ["arabic"],
+  variable: "--font-elMessiri",
 });
 
 export const metadata: Metadata = {
@@ -14,7 +20,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html lang="en" dir="rtl" className={cairo.className}>
+    <html
+      lang="ar"
+      dir="rtl"
+      className={`${cairo.variable} ${elmessiri.variable}`}
+    >
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
